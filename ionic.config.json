@@ -1,0 +1,7 @@
+{
+  "name": "oneshottApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
