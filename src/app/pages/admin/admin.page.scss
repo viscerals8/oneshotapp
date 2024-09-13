@@ -1,0 +1,97 @@
+/* Estilo para el contenido principal */
+ion-content {
+    --background: #e7ebe2;
+    /* Fondo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilo para el contenedor de administración */
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    /* Ancho máximo aumentado para el contenido más amplio */
+
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(231, 253, 201, 0.9);
+    /* Fondo verde claro con opacidad */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para los formularios en los cards */
+ion-card {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+ion-card-header {
+    background-color: #4a6b3a;
+    /* Verde moderado */
+    color: #ffffff;
+}
+
+ion-card-title {
+    color: #ffffff;
+}
+
+/* Estilo para los ítems dentro del card */
+ion-item {
+    margin-bottom: 15px;
+}
+
+/* Estilo para los inputs dentro del card */
+ion-input {
+    --padding-start: 0;
+    --padding-end: 0;
+}
+
+/* Estilo para los botones */
+ion-button {
+    margin-top: 15px;
+    --color: #ffffff;
+}
+
+ion-button[color="danger"] {
+    --background: #d9534f;
+    /* Rojo oscuro para el botón de eliminar */
+    --color: #ffffff;
+}
+
+ion-button[expand="full"] {
+    background-color: #4a6b3a;
+    /* Verde moderado */
+    color: #ffffff;
+}
+
+/* Estilo para las imágenes dentro de los cards */
+ion-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para el encabezado */
+ion-header {
+    background: #3e5c00;
+    /* Verde más claro que el verde oscuro */
+    color: #ffffff;
+}
+
+/* Estilo para la barra de herramientas */
+ion-toolbar {
+    --background: #040403;
+    /* Negro para contraste */
+}
+
+/* Estilo para el título */
+ion-title {
+    color: #ffffff;
+}

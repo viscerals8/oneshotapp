@@ -1,0 +1,136 @@
+ion-content {
+    --background: #72a82e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+
+h2 {
+    color: #004d00;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.categoria {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    width: 100%;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    margin-bottom: 10px;
+}
+
+
+.cart {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.cart h3 {
+    color: #004d00;
+    margin-bottom: 15px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+ion-button {
+    margin-top: 10px;
+    --color: #ffffff;
+}
+
+ion-button[type="submit"] {
+    background-color: #3d572e;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+ion-button[type="submit"]:disabled {
+    background-color: #9e9e9e;
+}
+
+ion-button[fill="outline"] {
+    --border-color: #3d572e;
+    --color: #3d572e;
+}
+
+ion-button[color="danger"] {
+    --color: #ffffff;
+    --background: #d9534f;
+}
+
+ion-button[color="danger"]:hover {
+    --background: #c9302c;
+}
+
+
+ion-header {
+    background: #004d00;
+    color: #ffffff;
+}
+
+ion-toolbar {
+    --background: #004d00;
+}
+
+ion-title {
+    color: #ffffff;
+}

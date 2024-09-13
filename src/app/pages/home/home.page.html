@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-toolbar>
+    <ion-title>Tienda Warhammer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="home-container">
+    <h2>Bienvenido a la Tienda Warhammer</h2>
+    <p>¡Encuentra las mejores figuras de Warhammer por raza!</p>
+
+
+    <div *ngFor="let categoria of categorias" class="categoria">
+      <h3>{{ categoria.nombre }}</h3>
+
+
+      <div class="product-list">
+        <div *ngFor="let producto of categoria.productos" class="product-card">
+          <img [src]="producto.imagen" alt="{{ producto.nombre }}" />
+          <h3>{{ producto.nombre }}</h3>
+          <p>{{ producto.descripcion }}</p>
+          <p><strong>Precio: ${{ producto.precio }}</strong></p>
+
+
+          <ion-button (click)="agregarAlCarrito(producto)">Añadir al carrito</ion-button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cart">
+      <h3>Tu Carrito</h3>
+
+
+      <div *ngFor="let item of carrito; let i = index" class="cart-item">
+        <p>{{ item.nombre }} - ${{ item.precio }}</p>
+
+
+        <ion-button color="danger" (click)="eliminarDelCarrito(i)">Eliminar</ion-button>
+      </div>
+
+
+      <p *ngIf="carrito.length === 0">Tu carrito está vacío.</p>
+
+
+      <ion-button *ngIf="carrito.length > 0" (click)="comprar()">Comprar</ion-button>
+      <ion-button *ngIf="carrito.length > 0" color="danger" (click)="vaciarCarrito()">Vaciar Carrito</ion-button>
+    </div>
+  </div>
+</ion-content>
